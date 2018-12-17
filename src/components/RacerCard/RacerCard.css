@@ -9,39 +9,6 @@
     text-align: left;
   }
   
-  .img-thumbnail > .img-container {
-    height: 60%;
-    overflow: hidden;
-    text-align: center;
-    background:#6CADDC;
-  }
-  .img-thumbnail > .img-container > img {
-    width: 60%
-  }
-  
-  .img-thumbnail > .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 15px;
-  }
-  
-  .img-thumbnail > .content > ul {
-    list-style-type: none;
-  }
-  
-  .img-thumbnail > .content > ul > li {
-    margin-top: 18px;
-  }
-  
-  .img-thumbnail > .remove {
-    color: #ff1744;
-    font-size: 48px;
-    position: absolute;
-    top: -20px;
-    right: 5px;
-    cursor: pointer;
-  }
-  
-  .img-thumbnail > .remove:hover {
-    color: #d50000;
+  .img-thumbnail:hover {
+    transform: scale(1.1);
   }

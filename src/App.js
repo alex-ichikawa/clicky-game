@@ -21,12 +21,12 @@ class App extends Component {
   }
 
   handleIncrement = (id) => {
-    if (this.state.clickedRacers.indexOf(id) == -1) {
+    if (this.state.clickedRacers.indexOf(id) === -1) {
       this.setState({ count: this.state.count + 1 });
       if (this.state.count >= this.state.highscore) {
         this.setState({ highscore: this.state.count + 1 });
       }
-      this.state.friends.filter((friend, index) => friend.id == id);
+      this.state.friends.filter((friend, index) => friend.id === id);
       this.setState({ clickedRacers: [...this.state.clickedRacers, id] });
       this.shuffleArray(this.state.friends);
 
