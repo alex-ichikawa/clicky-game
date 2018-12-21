@@ -26,7 +26,6 @@ class App extends Component {
       if (this.state.count >= this.state.highscore) {
         this.setState({ highscore: this.state.count + 1 });
       }
-      this.state.friends.filter((friend, index) => friend.id === id);
       this.setState({ clickedRacers: [...this.state.clickedRacers, id] });
       this.shuffleArray(this.state.friends);
 
